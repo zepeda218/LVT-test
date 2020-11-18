@@ -1,0 +1,115 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.content-fluid > .top-section,
+.content-fluid > .main-section{
+    padding-right: 14%;
+    padding-left: 14%;
+}
+
+footer {
+    padding-right: 8.4%;
+    padding-left: 9%;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.top-section {
+    background: #004A80;
+    text-align: center;
+    padding-bottom: 7.7%;
+}
+
+.top-section > h1 {
+    font-size: 52px;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+
+.top-section > h1,
+.top-section > p,
+.top-section > span {
+    color: #FFFFFF;
+}
+
+.top-section > p > span {
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 29px;
+}
+
+.top-section > p.instructions {
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+.yellow {
+    color: #F6BC25;;
+}
+
+input[type="search"] {
+    background: #FFFFFF;
+    box-shadow: inset 0 -1px 4px 0 rgba(0,0,0,0.20);
+    border-radius: 3px;
+    border-radius: 3px;
+    width: 54.2%;
+    height: 70px;
+}
+
+input[type="search"]::placeholder {
+    font-weight: bold;
+    font-size: 16px;
+    color: #9B9B9B;
+    letter-spacing: 2px;
+    line-height: 18px;
+}
+
+.btn-search {
+    background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
+    box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+    border-radius: 6px;
+    width: 12.5%;
+    height: 70px;
+    font-size: 24px;
+    color: #004A80;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.main-section {
+    background-image: linear-gradient(0deg, #E6E6E6 0%, #FFFFFF 100%);
+}
+
+.main-section > h1 {
+    font-size: 52px;
+    color: #004A80;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+}
+
+.main-section > h4 {
+    font-size: 22px;
+    color: #4A4A4A;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.icon-search,
+.icon-person {
+    width: 1.6%;
+    height: 1.9%;
+    margin-right: 1.7%;
+}
+
+
+.logo {
+    width: 12%;
+    height: 2%;
+}
