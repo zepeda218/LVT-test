@@ -1,21 +1,11 @@
 $(document).ready(function () {
-  $(".btn-search").on("click", function (e) {
+//   $(".btn-search").on("click", function () {
     email = $('input[type="search"]').val();
-    $.ajax({
-      type: "GET",
-      crossDomain: true,
-      url:
-        "https://ltv-data-api.herokuapp.com/api/v1/records.json?email=" + email + '.',
-      dataType: "jsonp",
-      success: function (data) {
-        //if the request is successful do something with the data
-        alert(data);
-      },
-      error: function (request) {
-        //if the request fails, log what happened
-        console.log(request);
-        alert(JSON.stringify("Error: " + request));
-      },
-    });
-  });
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const url = "https://ltv-data-api.herokuapp.com/api/v1/records.json?email=" + email; // site that doesn’t send Access-Control-*
+    fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
+    .then(response => response.text())
+    .then(contents => alert(contents))
+    .catch(() => alert("Can’t access " + url + " response. Blocked by browser?"))
+//   });
 });

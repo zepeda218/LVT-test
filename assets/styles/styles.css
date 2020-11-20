@@ -133,6 +133,20 @@ input[type="search"]::placeholder {
     vertical-align: middle;
 }
 
+input[type="search"]::-moz-placeholder {
+    padding-left: 10px;
+    line-height:70px;
+}
+
+input[type="search"]:active,
+input[type="search"]:focus {
+    background: #FFFFFF;
+    border: 2px solid #F6BC25;
+    box-shadow: inset 0 -1px 4px 0 rgba(0,0,0,0.20);
+    border-radius: 3px;
+    outline: none;
+}
+
 .btn-search {
     background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
     box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
@@ -156,6 +170,18 @@ input[type="search"]::placeholder {
     background: #F2DA56;
     box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
     border-radius: 6px;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
 }
 
 .main-section {
@@ -222,17 +248,19 @@ span.circle {
     background: #004A80;
     border-radius: 0.8em;
     -moz-border-radius: 0.8em;
-    -webkit-border-radius: 0.8em;
+    -webkit-border-radius: 50%;
     font-size: 48px;
     color: #F6BC25;
     letter-spacing: 0;
     display: inline-block;
     font-weight: bold;
-    line-height: 1.6em;
+    line-height: 2em;
     margin-right: 15px;
     text-align: center;
-    width: 1.6em; 
-  }
+    vertical-align: middle;
+    width: 90px;
+    height: 90px
+}
 
 .result-card {
     background: #FFFFFF;
@@ -282,7 +310,7 @@ span.circle {
 }
 
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1395px) {
     .top-section,
     .main-section,
     .nav-bar,
@@ -320,10 +348,21 @@ span.circle {
     footer > .row > .footer-desc {
         padding-right: 5.2%;
     }
+    .policies {
+        text-align: center;
+        padding-top: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 415px) {
+    .profile-img {
+        text-align: center;
+        margin-bottom: 5%;
+    }
 }
 
 /* Phone */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
     .top-section,
     .main-section,
     .nav-bar,
