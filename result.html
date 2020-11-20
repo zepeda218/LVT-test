@@ -16,6 +16,13 @@
 <body>
     <div class="content-fluid">
         <div class="nav-bar row">
+            <div class="col-md-9 col-8">
+                <img class="logo" src="assets/SVGs/Logo.svg" alt="Logo">
+            </div>
+            <div class="col-md-3 col-4 float-right">
+                <img class="icon-person float-right" src="assets/SVGs/icn_person.svg" alt="Profile">
+                <img class="icon-search float-right" src="assets/SVGs/icn_search.svg" alt="Search">
+            </div>
         </div>
 
         <div class="main-section result">
@@ -26,40 +33,42 @@
                 <div class="row">
                     <div class="card-content">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-lg-1 col-md-2 profile-img">
                                 <span class="circle">
                                     <img class="icon-user" src="assets/PNGs/icn_person@2x.png" alt="Profile">
                                 </span>
                             </div>
 
-                            <div class="col-md-10">
-                                <h3 class="username">John Smith, 35</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            <table class="result-table">
-                                <body>
-                                    <tr>
-                                        <td>
-                                            <h4>Address</h4>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        </td>
+                            <div class="col-lg-11 col-md-10">                            
+                                    <div class="container">
+                                        <div class="row">
+                                        <div class="col-md-12">
+                                            <h3 class="username">John Smith, 35</h3>
+                                            <p class="user-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12 address">
+                                            <h4>Address</h1>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12 phone-num">
+                                            <h4>Phone Numbers</h1>
+                                            <p>(555) 555-5555</p>
+                                            <p>(555) 555-5555</p>
+                                        </div>
+                                          <div class="w-100"></div>
+                                        <div class="col-lg-6 col-md-6 col-12 email">
+                                              <h4>Email</h4>
+                                              <p>johnsmith@example.com</p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12 relatives">
+                                              <h4>Relatives</h4>
+                                              <p>Jane Smith</p>
+                                              <p>John Smith</p>
+                                        </div>
+                                        </div>
+                                      </div>
 
-                                        <td>
-                                            <h4>Phone Numbers</h4>
-                                        </td>
-                            
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <h4>Email</h4>
-                                        </td>
-                                        
-                                        <td>
-                                            <h4>Relatives</h4>
-                                        </td>
-                                    </tr>
-                                </body>
-                            </table>
                             </div>
                         </div>
                     </div>
@@ -67,11 +76,39 @@
 
 
             </div>
-
-
         </div>
 
+        <div class="search-section">
+            <h1>Can't Find The Right Person?</h1>
+            <p>
+                <span class="yellow">Try Again</span>
+                <span>- Make a new search</span>
+            </p>
+            <form class="search-form">
+                <input type="search" placeholder="EMAIL" tabindex="1">
+                <button type="submit" class="btn-search">GO!</button>
+                <div class="instructions">
+                    <span><img class="lock" src="assets/SVGs/lock.svg"></span>
+                    <span class="yellow">Enter Any Email Address. They won't be notified.</span>
+                </div>
+            </form>
+        </div>
+
+
         <footer>
+            <div class="row">
+                <div class="col-lg-10 col-md-9 footer-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo
+                    consequat.
+                </div>
+                <div class="col-lg-2 col-md-3 policies">
+                    <a href="#">Terms</a> |
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
         </footer>
 
         <!-- Optional JavaScript -->
