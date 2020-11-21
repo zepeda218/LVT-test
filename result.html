@@ -52,7 +52,6 @@
                                         <div class="col-lg-6 col-md-6 col-12 phone-num">
                                             <h4>Phone Numbers</h1>
                                         </div>
-                                        <div class="w-100 separator"></div>
                                         <div class="col-lg-6 col-md-6 col-12 email">
                                             <h4>Email</h4>
                                         </div>
@@ -71,15 +70,18 @@
             </div>
         </div>
 
-        <div class="search-section">
+        <div class="search-section">   
             <h1>Can't Find The Right Person?</h1>
             <p>
                 <span class="yellow">Try Again</span>
                 <span>- Make a new search</span>
             </p>
             <form class="search-form">
-                <input type="search" placeholder="EMAIL" tabindex="1">
+                <div>
+                <input type="text" class="search-input" tabindex="1" required>
+                <span class="floating-label">EMAIL</span>
                 <button type="button" class="btn-search">GO!</button>
+                </div>
                 <div class="instructions">
                     <span><img class="lock" src="assets/SVGs/lock.svg"></span>
                     <span class="yellow">Enter Any Email Address. They won't be notified.</span>
