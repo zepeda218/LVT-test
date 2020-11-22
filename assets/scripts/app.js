@@ -19,7 +19,7 @@ $(document).ready(function () {
    */
     function getContent(){
     localStorage.clear(); //Clears storage for next request
-    email = $('input[type="text"]').val();
+    email = $('input[type="text"]').val().toLowerCase();
 
     if (validateEmail(email)) {
       const proxyurl = "https://cors-anywhere.herokuapp.com/"; //Proxy that helps enable CORS requests

@@ -479,8 +479,12 @@ a.nostyle:visited {
     padding-left: 4.7%;
   }
   .nav-bar {
-    padding-top: 1.6%;
-    padding-bottom: 1.6%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .top-section > h1,
+  .result > h1 {
+    padding-top: 30px;
   }
   .top-section > h1,
   .main-section > h1,
