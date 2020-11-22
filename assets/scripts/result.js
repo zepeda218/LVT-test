@@ -1,13 +1,19 @@
 $(document).ready(function () {
-    setContent();
+  setContent();
 });
 
+/**
+ * Gets an object and sets its content into the result card in the result page
+ * If there's no content in the JSON object, makes sure to tell the user
+ */
 function setContent() {
   if (window.localStorage && localStorage.userObject) {
     userObject = localStorage.getItem("userObject");
-    retreivedObject = JSON.parse(userObject);
+    retreivedObject = JSON.parse(userObject); //parses the retreived object into an JSON object
     if (JSON.stringify(retreivedObject) == "[]") {
-      $(".result-desc").text("Oops!  We can't seem to find the email you're looking for. Want to try again?");
+      $(".result-desc").text(
+        "Oops!  We can't seem to find the email you're looking for. Want to try again?"
+      );
     } else {
       $(".username").append(
         retreivedObject.first_name + " " + retreivedObject.last_name
@@ -28,7 +34,7 @@ function setContent() {
         );
       }
 
-      $(".result-card").show()
+      $(".result-card").show();
     }
   }
 }
