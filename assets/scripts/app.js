@@ -1,9 +1,23 @@
 $(document).ready(function () {
-  /**
+
+  $(".btn-search").on("click", function (e) {
+    getContent();
+  });
+
+  $('input[type="text"]').keypress(function(event){
+    keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '13'){
+        getContent();  
+    }
+});
+
+});
+
+/**
    * Makes a request to ltv API to search an specific email address.
    * If there's a response, it gets stored in the local storage and redirects to results page
    */
-  $(".btn-search").on("click", function (e) {
+    function getContent(){
     localStorage.clear(); //Clears storage for next request
     email = $('input[type="text"]').val();
 
@@ -23,8 +37,7 @@ $(document).ready(function () {
       $("span.floating-label").addClass("error");
       $(".floating-label").text("Please add a valid email address");
     }
-  });
-});
+  }
 
 // Validates user's email request using regular expressions
 function validateEmail(email) {

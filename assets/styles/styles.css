@@ -12,8 +12,8 @@ body {
 }
 
 .nav-bar {
-  padding-top: 1.6%;
-  padding-bottom: 1.6%;
+  padding-top: 1.2%;
+  padding-bottom: 1.2%;
 }
 
 .content-fluid > .main-section {
@@ -24,10 +24,6 @@ body {
 .search-section {
   padding-top: 8.6%;
   padding-bottom: 0.9%;
-}
-
-.search-form {
-  padding-bottom: 7.7%;
 }
 
 /* Footer */
@@ -95,8 +91,8 @@ footer > .row > .policies {
   line-height: 32px;
 }
 
-.top-section > form > .instructions,
-.search-section > form > .instructions {
+.top-section > div > .instructions,
+.search-section > div > .instructions {
   font-size: 16px;
   color: #f6bc25;
   letter-spacing: 0;
@@ -114,6 +110,7 @@ input[type="text"] {
   height: 70px;
   margin-right: 1.4%;
   padding-left: 10px;
+  padding-top: 3%;
 }
 
 input:focus ~ .floating-label,
@@ -123,34 +120,41 @@ input:not(:focus):valid ~ .floating-label {
   left: 12px;
   font-size: 16px;
   color: #9b9b9b;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   line-height: 18px;
 }
 
 .search-input {
-  font-size: 14px;
-  width: 200px;
-  height: 55px;
+  font-size: 22px;
+  color: #000000;
+  letter-spacing: 0;
+  vertical-align: bottom;
 }
 
 .floating-label {
   font-weight: bold;
   font-size: 16px;
   color: #9b9b9b;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   line-height: 18px;
   height: 18px;
   position: absolute;
   pointer-events: none;
   left: 12px;
-  top: 40px;
+  top: 35px;
   transition: 0.2s ease all;
 }
 
 .search-div {
   position: relative;
   padding-top: 10px;
+  padding-bottom: 7.7%;
 }
+
+/* .search-form {
+  padding-bottom: 7.7%;
+} */
+
 
 input[type="text"]:active,
 input[type="text"]:focus {
@@ -210,7 +214,6 @@ span.error {
   color: #004a80;
   letter-spacing: 0;
   text-align: center;
-  line-height: 70px;
   font-weight: bold;
 }
 
@@ -340,6 +343,18 @@ img {
   padding-top: 1%;
 }
 
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
 .no-padding {
   padding: 0px;
 }
@@ -363,6 +378,24 @@ img {
 
 /* Tablet */
 @media screen and (max-width: 1395px) {
+  span.circle {
+    background: #004a80;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 50%;
+    font-size: 33.6px;
+    color: #f6bc25;
+    letter-spacing: 0;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 2em;
+    margin-right: 15px;
+    text-align: center;
+    vertical-align: middle;
+    width: 63px;
+    height: 63px;
+  }
+  
   .top-section,
   .main-section,
   .nav-bar,
@@ -415,12 +448,39 @@ img {
 
 /* Phone */
 @media screen and (max-width: 415px) {
+  span.circle {
+    background: #004a80;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 50%;
+    font-size: 26.88px;
+    color: #f6bc25;
+    letter-spacing: 0;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 2em;
+    margin-right: 15px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50.4px;
+    height: 50.4px;
+  }
+  .list-items > h4 {
+    font-size: 20px;
+  }
+  .list-items > p {
+    font-size: 16px;
+  }
   .top-section,
   .main-section,
   .nav-bar,
   .search-section {
     padding-right: 4.7%;
     padding-left: 4.7%;
+  }
+  .nav-bar {
+    padding-top: 1.6%;
+    padding-bottom: 1.6%;
   }
   .top-section > h1,
   .main-section > h1,
